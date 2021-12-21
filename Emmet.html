@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--
+        참고:  https://curryyou.tistory.com/262 
+        • Emmet: 강력한 자동완성 기능 등으로 HTML 작성 속도를 크게 향상시켜주는 플러그인
+            html5 기본 구조: ! + Enter키 or Tab키
+            태그 생성: 태그명 + Enter키 or Tab키
+            태그 n개 생성: 태그*n + Enter키 or Tab키
+            태그 중첩 생성: 태그>태그>태그 + Enter키 or Tab키
+            인접 태그 생성: 태그+태그+태그 + Enter키 or Tab키
+            아이디 설정: 태그#아이디 + Enter키 or Tab키
+            클래스 설정: 태그.클래스 + Enter키 or Tab키
+            텍스트 삽입: 태그{텍스트} + Enter키 or Tab키
+            숫자 1~n 삽입: $*n + Enter키 or Tab키
+
+        • 응용
+            <div id="myId" class="classA classB"></div>
+            ➔ div#myId.classA.classB
+
+            <div id="container"> 
+                <ul class="list">
+                    <li class="name1">이름1</li>
+                    <li class="name2">이름2</li>
+                    <li class="name3">이름3</li>
+                </ul>
+            </div>
+            ➔ div#container>ul.list>li.name${이름$}*3
+
+            <div id="container"> 
+                <ul class="list"> 
+                    <li class="name1">이름1</li> 
+                    <li class="name2">이름2</li> 
+                    <li class="name3">이름3</li> 
+                </ul> 
+                <ol class="list"> 
+                    <li class="job1">직업1</li> 
+                    <li class="job2">직업2</li> 
+                    <li class="job3">직업3</li> 
+                </ol> 
+            </div> 
+            <p>내용1</p> 
+            <p>내용2</p> 
+            <p>내용3</p>
+            ➔ div#container>(ul.list>li.name${이름$}*3)+(ol.list>li.job${직업$}*3)^p{내용$}*3
+    -->
+</body>
+</html>

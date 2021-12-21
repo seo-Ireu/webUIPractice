@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Layout1</title>
+    <Style>
+        #wrap  {width:1000px; height:900px; margin:0 auto; background-color: blueviolet; font-size:40px; color:#fff; text-align: center; text-transform:uppercase;}
+        #header {width:1000px; height:100px; background-color: cornflowerblue; line-height:100px;}
+        #nav {width:1000px; height:100px; background-color: aqua; line-height:100px;}
+        #side {float:left; width:300px; height:600px; background-color:blue; line-height:600px;}
+        #contents {float:left; width:700px; height:600px; background-color:darkblue; line-height:600px;}
+        #footer {float:left; width:1000px; height:100px; background-color: deepskyblue; line-height:100px;}
+    </Style>
+</head>
+<body>
+    <!--
+        참고: https://www.youtube.com/watch?v=tHy498wdPaA
+        • 중앙 정렬 : #wrap { margin:0 auto; }
+        • <div> 한 라인에 2개 넣기 side- contents: 
+            #side {float:left;}
+            #contents {float:left;}
+            #footer {float:left;}
+            footer에 설정 안넣으면 nav밑에 footer 붙어서 나옴
+            (float:left하면 side,contents 높이가 0으로 잡힘)
+            =>하지만 이 방법은 잘 쓰이지 않음
+        • 텍스트 수직 정렬 방법: line-height를 div height크기 만큼 넣기
+        • 16진법으로 색 표현할 때 앞에 # 빼먹지 않기
+        • text-transform 속성 알아보기
+
+           header
+            nav
+        side - contents
+           footer
+    -->
+
+    <div id="wrap">
+        <div id="header">header</div>
+        <div id="nav">nav</div>
+        <div id="side">side</div>
+        <div id="contents">contents</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>

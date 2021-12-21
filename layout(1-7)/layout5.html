@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Layout5</title>
+    <Style>
+        *{margin:0 auto;}
+        #wrap{width:100%; color:#fff; font-size:40px; text-align:center; text-transform: uppercase;}
+        #header-wrap{width:100% ;background-color: #8d6e63; }
+        #banner-wrap{width: 100%; background-color: #a1887f;}
+        #content-wrap{width: 100%; background-color: #bcaaa4;}
+        #footer-wrap{width: 100%; background-color: #d7ccc8;}
+        .header-container{width:1000px; height:100px; line-height: 100px; background-color: #3e2723;}
+        .banner-container{width:1000px; height:300px;line-height: 300px; background-color: #4e342e;}
+        .content-container{width:1000px; height:500px;line-height: 500px; background-color: #5d4037;}
+        .footer-container{width:1000px; height:100px;line-height: 100px; background-color: #6d4c41;}
+    </Style>
+</head>
+<body>
+    <!--
+        참고: https://www.youtube.com/watch?v=RhLY7F8ET7c
+        • 부모와 자식의 height값 같을때, 자식의 height값 설정되어 있으면 부모의 height값 설정 안해줘도 됨 
+        
+        부모header(자식header)
+        부모banner(자식banner)
+        부모content(자식content)
+        부모footer(자식footer)
+    -->
+
+    <div id="wrap">
+        <div id="header-wrap">
+            <div class="header-container">header</div>
+        </div>
+        <div id="banner-wrap">
+            <div class="banner-container">banner</div>
+        </div>
+        <div id="content-wrap">
+            <div class="content-container">content</div>
+        </div>
+        <div id="footer-wrap">
+            <div class="footer-container">footer</div>
+        </div>
+    </div>
+</body>
+</html>
