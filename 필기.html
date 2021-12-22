@@ -21,6 +21,18 @@
             display:block; float:right;하면 padding적용+오른쪽에 위치하지만
             텍스트1 텍스트2 텍스트3이 거꾸로 위치함
 
+        • 이미지를 표현하는 방법
+            1. img 태그로 표현(의미가 있을 때,alt 속성으로 대체 문자 표현)
+            2. background 속성으로 표현(의미가 없을 때, 대체 문자 표현 XXX)
+            3. 이미지를 background 속성으로 표현
+                가상으로 대체 문자를 만들어줌(IR 효과)
+                이미지 스프라이트 효과를 이용할 수 있어서 요즘엔 이 방식을 많이 이용
+        • float: left로 인한 영역깨짐(height:0) 방지법
+            1. 깨지는 영역에 똑같이 float:left를 사용(X): 모든 박스에 float:left를 사용하게 됨
+            2. float의 성질을 차단하는 clear:both를 사용(X): 어떤 영역이 깨졌는지 찾기 어려움
+            3. float을 사용한 상위 박스한테 overflow:hidden을 사용(O)
+            4. clearfix를 사용(OO)
+
     -->
 </body>
 </html>
