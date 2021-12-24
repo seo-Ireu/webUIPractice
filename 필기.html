@@ -8,12 +8,15 @@
 </head>
 <body>
     <!--
-        웹 표준
+        • 웹 표준 참고 페이지
         참고: https://nuli.navercorp.com/
         참고: https://www.wah.or.kr:444/
+
         • 스킵버튼: [tab], [shift]+[tab]
+
         • <a>태그에 text-align해도 안먹힘
             부모 태그에 적용해야함.
+
         • inline에 padding 상하좌우 적용하면 좌/우만 적용됨.
             display: inline-block; 설정 해줘야함.
 
@@ -27,12 +30,25 @@
             3. 이미지를 background 속성으로 표현
                 가상으로 대체 문자를 만들어줌(IR 효과)
                 이미지 스프라이트 효과를 이용할 수 있어서 요즘엔 이 방식을 많이 이용
+
         • float: left로 인한 영역깨짐(height:0) 방지법
             1. 깨지는 영역에 똑같이 float:left를 사용(X): 모든 박스에 float:left를 사용하게 됨
             2. float의 성질을 차단하는 clear:both를 사용(X): 어떤 영역이 깨졌는지 찾기 어려움
             3. float을 사용한 상위 박스한테 overflow:hidden을 사용(O)
             4. clearfix를 사용(OO)
 
+        • relative 속성을 주고 싶으면 부모한테 relative설정하고 적용태그에는 absolute설정 후 위치 변경하기
+
+        • 레이아웃 구조가 깨져있으면 그 부분에 위치하는 부모가 width,height값이 적용 되어 있을 경우가 많음.
+            width, height값 빼주기
+        
+        • 절대값(absolute)이 부여된 태그(img)는 <li>에서 텍스트의 정렬을 위해 패딩값을 주어도 그 값이 적용되지 않음
+
+        • 콘텐츠 요소를 보이지 않게 하는 방법
+            1. display:none  --- display:block (영역이 사라짐)
+            2. visibility: hidden --- visibility:visible (영역 유지)
+            3. opacity: 0 --- opacity:1 (영역 유지)
+            4. width:0; height:0; overflow:hidden;
     -->
 </body>
 </html>
