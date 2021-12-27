@@ -10,12 +10,12 @@
 #wrap {}
 #header { height: 325px; background:url(../img/header_bg.jpg) center top repeat-x;}
 #contents {}
-#footer {height: 200px; background: #333;}
+#footer {border-top:1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */ 
 #cont_nav {  background-color: #f6fdff;}
 #cont_tit {background-color: #eaf7fd;;}
-#cont_ban {background-color: #dceff7;}
+#cont_ban {background-color: #484b4d;}
 #cont_cont {background-color: #f6fdff;}
 /* 컨테이너 */
 .container{width:990px; margin:0 auto; height:inherit; /*background:rgba(255,255,255,0.3);*/}
@@ -170,10 +170,71 @@ width: 100%;height: 100%;}
 /* margin-위치: -1px 하는 이유: 한줄로 보이는거 한줄로 겹쳐 보이게 해줌*/
 .tab_menu ul li a {padding: 5px 10px; display:block;} 
 /* 이렇게 한 이유:li 에다가 padding 적용하면 텍스트에 hover했을 때만 효과 발동됨 그래서 a태그에 display속성 넣어주고 padding적용해야함 */
-.tab_menu ul li ul {position:absolute; left:0;top:48; width:270px; border:0;}
+.tab_menu ul li ul {position:absolute; left:0;top:48px; width:270px; border:0;}
 .tab_menu ul li ul li { float:none; border:0; background:url(../img/dot.gif) no-repeat 9px 8px; padding-left:18px;}
 .tab_menu ul li ul li a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;  width:100%;
 padding: 0 0 3px 0;}
+.tab_menu ul li.active {background: #2c94c4;}
+.tab_menu ul li.active a {color: #fff;}
+.tab_menu ul li.active ul li a {color: #333;}
+
+/* 게시판4 */
+.notice4 {position:relative; border:1px solid #ccc;}
+.notice4 h4 {overflow:hidden; border-bottom:1px solid #ccc; font-size: 14px; color: #0093bd; padding:8px 10px;} 
+.notice4 h4 em {color: #cf3292; }
+.notice4 ul {padding:10px;}
+.notice4 li { overflow:hidden; background:url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;padding-bottom: 2px;}
+.notice4 li a { float:left; overflow: hidden; text-overflow:ellipsis; white-space:nowrap; width:60%;}
+.notice4 li span {float:right; width:30%; text-align:right;}
+.notice4 a.more {  position: absolute; top:9px; right:9px ;}
+
+/* 갤러리 */
+.gallery { position:relative; border:1px solid #ccc; height: 254px; overflow: hidden;}
+.gallery h4 { border-bottom: 1px solid #ccc; font-size:14px; color:#0093bd; padding:10px 0 8px 11px; font-weight: bold;}
+.gallery .gallery_btn { position:absolute; right:5px; top:7px;}
+.gallery .gallery_btn ul { overflow:hidden; }
+.gallery .gallery_btn li { float:left; margin:1px 2px;}
+.gallery .gallery_btn li a {display:block; width:23px; height:23px; background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn li.gb_icon1 a { background-position: -150px -120px;}
+.gallery .gallery_btn li.gb_icon2 a { background-position: -150px -143px;}
+.gallery .gallery_btn li.gb_icon3 a { background-position: -150px -166px;}
+.gallery .gallery_btn li.gb_icon4 a { background-position: -150px -189px;}
+.gallery .gallery_btn li.gb_icon1 a:hover { background-position: -173px -120px;}
+.gallery .gallery_btn li.gb_icon2 a:hover { background-position: -173px -143px;}
+.gallery .gallery_btn li.gb_icon3 a:hover { background-position: -173px -166px;}
+.gallery .gallery_btn li.gb_icon4 a:hover { background-position: -173px -189px;}
+.gallery .gallery_img {}
+.gallery .gallery_img img { width:100%;}
+
+/* 로그인 */
+#login_form { margin-bottom: 15px; background:#f2f3f5; padding:15px; }
+.login_header {overflow:hidden; }
+.login_header .lh_check {overflow:hidden; float:left; padding-right:15px;}
+.login_header .lh_check .input_check {vertical-align: -2px;} /* 맥은 상관없지만 윈도우같은 경우 체크박스랑 텍스트랑 수직 정렬 안맞음 그걸 방지하기 위한 코드*/
+.login_header .lh_ip{float:left; }
+.login_header .lh_ip em {color:#0093bd; text-decoration: underline;}
+.login_content { position:relative;}
+.login_content .lc_text {margin-top:10px;}
+.login_content .lc_btn {position: absolute; right:0;top: 0;width: 62px;height: 47px;background:#fff; border:1px solid #bebebe;}
+.login_content .input_text { width:180px; height:16px; padding:2px 5px;
+border:1px solid #bebebe; margin-bottom:3px; background:#fff;}
+.login_footer {margin-top:5px;}
+.login_footer li { display:inline; }
+.login_footer li a {font-size: 12px;}
+
+/* 팝업 */
+.popup h4 { font-size:14px; color: #0093bd; padding-bottom: 4px; font-weight:700;}
+.popup ul {overflow: hidden;}
+.popup li {float:left; width:93px; margin-right:5px;}
+.popup li.last { margin-right:0;}
+.popup li img { width:100%;}
+
+/* 푸터 */
+.footer {padding: 25px 0; text-align: center; } /* float:left로 수직정렬하면 text-align안먹힘 */
+.footer ul {margin-bottom: 20px;}
+.footer li {position:relative; display:inline; padding: 0 7px 0 10px;}
+.footer li:before {content:''; width:1px; height:12px; background:#ccc;position:absolute; left:0;top: 2px;} /* 가상 선택자 */
+.footer li:first-child:before {width:0; height: 0;}
 
 /* margin, padding */
 .mt10 {margin-top:10px !important;}
