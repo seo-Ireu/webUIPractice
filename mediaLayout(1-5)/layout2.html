@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {width:1200px; margin:0 auto; font-size:20px; text-align: center; color:#fff; text-transform: uppercase;}
+        header {background:#0277bd; width: 100%; height: 100px; line-height: 100px; } 
+        aside{float:left; background:#039be5; width:30%; height:500px; line-height: 500px;}
+        section {float:left; background:#03a9f4; width:40%; height:500px; line-height: 500px;}
+        article {float:left; background:#29b6f6; width:30%; height:500px; line-height: 500px;}
+        footer {clear:both; background:#0288d1; width: 100%; height: 100px; line-height: 100px;}
+        
+        @media (max-width:1220px){
+            aside {width:40%;}
+            section {width:60%;}
+            article { width: 100%; height: 300px; line-height:300px;}           
+            /* article {float:none; clear:both; width: 100%; height: 300px; line-height:300px;}  이것도 가능 */
+        }
+        @media (max-width:768px){
+            aside {float:none; width: 100%; height: 300px;}
+            section {float:none; width: 100%; height: 300px;}
+        }
+        @media (max-width:480px){
+            header {height: 300px;}
+            aside {height: 200px;}
+            section {height: 200px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <aside>aside</aside>
+        <section>CONTENTS</section>
+        <article>article</article>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
